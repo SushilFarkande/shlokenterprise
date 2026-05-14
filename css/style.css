@@ -142,23 +142,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 10px;
   text-decoration: none;
 }
 
 .logo img {
-  height: 50px;
+  height: 40px !important;
   width: auto;
   object-fit: contain;
   display: block;
@@ -167,7 +168,7 @@ header {
 .logo-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--text-dark);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -885,9 +886,9 @@ footer {
   }
   
   .logo { font-size: 1.2rem; gap: 8px; flex-wrap: nowrap; }
-  .logo img { height: 35px; }
+  .logo img { height: 35px !important; }
   .logo-title { font-size: 1.1rem; white-space: normal; line-height: 1.2; max-width: 200px; }
-  .navbar { padding: 15px 10px; gap: 10px; flex-wrap: nowrap; width: 100%; box-sizing: border-box; }
+  .navbar { padding-top: 15px; padding-bottom: 15px; gap: 10px; flex-wrap: nowrap; }
 }
 
 @media (max-width: 768px) {
@@ -902,10 +903,10 @@ footer {
   .stats-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2rem; }
   .logo { font-size: 1rem; gap: 5px; flex-wrap: nowrap; }
-  .logo img { height: 28px; }
+  .logo img { height: 28px !important; }
   .logo-title { font-size: 0.95rem; white-space: normal; line-height: 1.1; max-width: 130px; }
   .mobile-menu-btn { font-size: 1.4rem; margin-left: auto; }
-  .navbar { padding: 10px 5px; gap: 5px; flex-wrap: nowrap; }
+  .navbar { padding-top: 10px; padding-bottom: 10px; gap: 5px; flex-wrap: nowrap; }
 }
 
 /* Premium Products Page Background */
