@@ -138,6 +138,10 @@ header {
   z-index: 1000;
 }
 
+header .container {
+  max-width: 95%;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
