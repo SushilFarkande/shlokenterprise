@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Shlok Laundry Solutions</title>
+    <meta name="description" content="Explore our wide range of professional laundry products, detergents, chemicals, and accessories.">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body class="premium-dark-theme">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="images/home/logo.png" alt="Shlok Enterprises Logo" style="height: 50px;">
+                <span class="logo-title">Shlok <span class="highlight">Enterprises</span></span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon-container" id="cartIcon" style="margin-left: 15px; color: var(--primary-color);">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="product-page-header" class="page-header">
+        <div class="container animate-on-scroll">
+            <div class="header-content-wrapper">
+                <div class="header-text-side">
+                    <h1 style="font-size: 3.5rem; margin-bottom: 10px;">Our Products</h1>
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;">Premium laundry chemicals, detergents, and accessories for all your needs.</p>
+                    
+                    <div class="dynamic-product-card">
+                        <h2 id="slider-title">Caustic Soda</h2>
+                        <p id="slider-desc">Powerful chemical that removes tough stains while keeping fabrics bright and fresh.</p>
+                    </div>
+                </div>
+                <div class="header-image-side">
+                    <div class="slider-image-container">
+                        <img id="slider-image" class="slider-image-element" src="images/product/Caustic Soda.jpeg" alt="Product Slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filtering & Search -->
+            <div class="filter-container animate-on-scroll">
+                <div class="filter-btns">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="detergent">Detergents</button>
+                    <button class="filter-btn" data-filter="softener">Softeners</button>
+                    <button class="filter-btn" data-filter="chemical">Chemicals</button>
+                    <button class="filter-btn" data-filter="accessory">Accessories</button>
+                </div>
+                <div class="search-box">
+                    <i class="fa-solid fa-search text-light"></i>
+                    <input type="text" id="productSearch" placeholder="Search products...">
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid-3" id="productGrid">
+                 <!-- Detergent 1 -->
+                <div class="card product-item animate-on-scroll" data-category="detergent">
+                    <div class="card-img">
+                        <img src="images/product/detergent powder.jpeg" alt="Detergent">
+                    </div>
+                    <div class="card-body">
+                        <h3>Detergent Liquid</h3>
+                        <p>High-efficiency concentrated liquid detergent for commercial machines.</p>
+                        <span class="price">₹99.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Detergent Liquid" data-price="99.00" data-img="images/product/detergent powder.jpeg">Add to Cart</a>
+                    </div>
+                </div>                
+
+                <!-- Detergent 2 -->
+                <div class="card product-item animate-on-scroll" data-category="detergent">
+                    <div class="card-img">
+                        <img src="images/product/pdl.jpeg" alt="Detergent">
+                    </div>
+                    <div class="card-body">
+                        <h3>Power Detergent Liquid</h3>
+                        <p>High-efficiency concentrated liquid detergent for commercial machines.</p>
+                        <span class="price">₹118.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Power Detergent Liquid" data-price="118.00" data-img="images/product/pdl.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Detergent 3 -->
+                <div class="card product-item animate-on-scroll" data-category="detergent">
+                    <div class="card-img">
+                        <img src="images/product/pdp.jpeg" alt="Detergent Powder">
+                    </div>
+                    <div class="card-body">
+                        <h3>Premium Detergent Powder</h3>
+                        <p>Powerful detergent powder for deep cleaning, tough stain removal, and long-lasting freshness..</p>
+                        <span class="price">₹114 / 1kg</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Premium Detergent Powder" data-price="114" data-img="images/product/pdp.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+                
+                  <!-- Detergent 4 -->
+                <div class="card product-item animate-on-scroll" data-category="detergent">
+                    <div class="card-img">
+                        <img src="images/product/Ultra premium.jpeg" alt="Detergent Powder">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ultra Premium Detergent Powder</h3>
+                        <p>Powerful detergent powder for White Clothes to deep cleaning, tough stain removal, and long-lasting freshness..</p>
+                        <span class="price">₹138 / 1kg</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Ultra Premium Detergent Powder" data-price="138" data-img="images/product/Ultra premium.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                 <!-- Softner 1 -->
+                <div class="card product-item animate-on-scroll" data-category="softener">
+                    <div class="card-img">
+                      <img src="images/product/fabric softner.jpeg" alt="softener">
+                    </div>
+                    <div class="card-body">
+                        <h3>Fabric Softner</h3>
+                        <p>Powerful detergent powder for White Clothes to deep cleaning, tough stain removal, and long-lasting freshness..</p>
+                        <span class="price">₹160.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Fabric Softner" data-price="160.00" data-img="images/product/fabric softner.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Chemical 1 -->
+                <div class="card product-item animate-on-scroll" data-category="Chemical">
+                    <div class="card-img">
+                        <img src="images/product/rust remover.jpeg" alt="chemical">
+                    </div>
+                    <div class="card-body">
+                        <h3>Rust Remover Liquid</h3>
+                        <p> Powerful formula to lift oil, grease, and tough stains easily.</p>
+                        <span class="price">₹320.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Rust Remover Liquid" data-price="320.00" data-img="images/product/rust remover.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Chemical 2 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/ink remover.jpeg" alt="Stain Remover">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ink Remover Liquid</h3>
+                        <p>Powerful formula that removes ink stains from fabrics with ease.</p>
+                        <span class="price">₹280.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Ink Remover Liquid" data-price="280.00" data-img="images/product/ink remover.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Chemical 3 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/hypo.jpeg" alt="Bleach">
+                    </div>
+                    <div class="card-body">
+                        <h3>Hypo Liquid Bleach</h3>
+                        <p>Advanced whitening formula for brighter, cleaner, and fresher Whites.</p>
+                        <span class="price">₹220.00 / 5kg and ₹1000.00 /35kg</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Hypo Liquid Bleach" data-price="220.00" data-img="images/product/hypo.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Chemical 4 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/oxy bleach.jpeg" alt="Bleach">
+                    </div>
+                    <div class="card-body">
+                        <h3>Oxy Bleach</h3>
+                        <p>Powerful bleach that removes tough stains while keeping fabrics bright and fresh.</p>
+                        <span class="price">₹160.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Oxy Bleach" data-price="160.00" data-img="images/product/oxy bleach.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                <!-- Chemical 5 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/optical bright.jpeg" alt="Laundry Bags">
+                    </div>
+                    <div class="card-body">
+                        <h3>Optical Brightner</h3>
+                        <p>Enhances fabric brightness for a cleaner, more vibrant look.</p>
+                        <span class="price">₹220.00 / 1kg</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Optical Brightner" data-price="220.00" data-img="images/product/optical bright.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+             
+                   <!-- Chemical 6 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/dry clean booster.jpeg" alt="Bleach">
+                    </div>
+                    <div class="card-body">
+                        <h3>Dry Clean Booster</h3>
+                        <p>Powerful bleach that removes tough stains while keeping fabrics bright and fresh.</p>
+                        <span class="price">₹280.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Dry Clean Booster" data-price="280.00" data-img="images/product/dry clean booster.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                   <!-- Chemical 7 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/MLC 200R.jpeg" alt="Bleach">
+                    </div>
+                    <div class="card-body">
+                        <h3>MLC 200 R</h3>
+                        <p>Powerful bleach that removes tough stains while keeping fabrics bright and fresh.</p>
+                        <span class="price">₹220.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="MLC 200 R" data-price="220.00" data-img="images/product/MLC 200R.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+                   <!-- Chemical 4 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/colour fixer.jpeg" alt="Bleach">
+                    </div>
+                    <div class="card-body">
+                        <h3>Colour Fixer</h3>
+                        <p>Powerful bleach that removes tough stains while keeping fabrics bright and fresh.</p>
+                        <span class="price">₹235.00 / 1L</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Colour Fixer" data-price="235.00" data-img="images/product/colour fixer.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+                
+                   <!-- Chemical 4 -->
+                <div class="card product-item animate-on-scroll" data-category="chemical">
+                    <div class="card-img">
+                        <img src="images/product/Caustic Soda.jpeg"" alt="Bleach">
+                    </div>
+                    <div class="card-body">
+                        <h3>Caustic Soda</h3>
+                        <p>Powerful bleach that removes tough stains while keeping fabrics bright and fresh.</p>
+                        <span class="price">₹98.00 / 1kg</span>
+                        <a href="#" class="btn btn-outline add-to-cart-btn" data-name="Caustic Soda" data-price="98.00" data-img="images/product/Caustic Soda.jpeg">Add to Cart</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 20px;">
+                        <img src="images/home/logo.png" alt="Shlok Enterprises Logo" style="height: 50px;">
+                        <span class="logo-title">Shlok <span class="highlight">Enterprises</span></span>
+                    </a>
+                    <p style="color: #bbb; margin-bottom: 20px;">Your trusted partner for all laundry products, chemicals, and washing machine repair services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_sushil_0807?igsh=Ym15aHZ6Z2V1dHZs" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i> Shlok Enterprises Gat no 353, Pirangut, Mulshi, pune 412115</li>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 10px;"></i> +91 7821098466, +91 7387585242</li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i> shlokmanufacturers@gmail.com</li>
+                        <li><i class="fa-solid fa-clock" style="margin-right: 10px;"></i>24/7</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p style="color: #bbb; margin-bottom: 15px;">Subscribe to get the latest updates and offers.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shlok Laundry Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/offers.js"></script>
+    <script src="js/script.js?v=6"></script>
+
+    <!-- Shopping Cart Overlay & Panel -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart-btn" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be injected here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Total:</span>
+                <span id="cartTotal">₹0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="checkoutCart()">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
