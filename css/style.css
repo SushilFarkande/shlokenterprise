@@ -226,6 +226,7 @@ footer .logo-title .highlight {
   font-weight: 500;
   transition: var(--transition);
   font-size: 1.1rem;
+  color: var(--text-dark);
 }
 
 .nav-links a:hover, .nav-links a.active {
