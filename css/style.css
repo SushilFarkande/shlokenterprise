@@ -352,6 +352,71 @@ footer .logo-title .highlight {
   gap: 30px;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 992px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+  .grid-4 { 
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  .grid-4 .card-img {
+    height: 200px;
+  }
+  .grid-4 .card-body {
+    padding: 20px;
+  }
+  .grid-4 .card-body h3 {
+    font-size: 1.25rem;
+  }
+  .grid-4 .card-body p {
+    font-size: 1rem;
+  }
+  .grid-4 .price {
+    font-size: 1.1rem;
+  }
+  .grid-4 .btn {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+.grid-4 .card-img {
+  height: 120px;
+}
+
+.grid-4 .card-body {
+  padding: 12px;
+}
+
+.grid-4 .card-body h3 {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.grid-4 .card-body p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.grid-4 .price {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.grid-4 .btn {
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
 .card {
   background: var(--white);
   border-radius: 10px;
@@ -513,6 +578,10 @@ footer .container {
   margin-bottom: 10px;
 }
 
+.footer-col ul li i {
+  color: var(--primary-color);
+}
+
 .footer-col ul li a {
   color: #bbb;
   transition: var(--transition);
@@ -537,7 +606,7 @@ footer .container {
   justify-content: center;
   border-radius: 50%;
   transition: var(--transition);
-  color: var(--white);
+  color: var(--primary-color);
 }
 
 .social-links a:hover {
